@@ -1,0 +1,106 @@
+@import url("./constant.less");
+:global {
+  body{
+    background: @bg-color;
+  }
+  // .ant-layout{
+  //   display: block;
+  // }
+  .g-header{
+    background: #fff url("../images/background.jpg") no-repeat top center / cover;
+    &-nav{
+      padding: 15px 0;
+      width: @container-width;
+      margin: auto;
+      &-left{
+        .logo-container{
+          .logo {
+            display: block;
+            img{
+              width: 160px;
+              height: 80px;
+            }
+          }
+          .title{
+            &:active, &:focus{
+              text-decoration: none;
+            }
+            h2{
+              font-size: 16px;
+              line-height: 80px;
+              margin: 0;
+            }
+          }
+          .search{
+            width: @search-box-width;
+            line-height: 80px;
+          }
+        }
+      }
+      &-right{
+        text-align: right;
+        .item{
+          line-height: 75px;
+          a{
+            display: block;
+            position: relative;
+          }
+          img{
+            width: 28px;
+            height: 28px;
+            display: inline-block;
+          }
+        }
+        .user{
+          line-height: 80px;
+          margin-left: 20px;
+          .avatar{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    &-menus{
+      background: @nav_bg_color;
+      .menus{
+        width: @container-width;
+        margin: auto;
+        a{
+          font-size: 16px;
+          display: block;
+          padding: 20px 25px;
+          color: #fff;
+          &:focus{
+            text-decoration: none;
+          }
+          &.active{
+            background-color: @nav_active_bg_color
+          }
+          &.menus-right{
+            padding: 15px 0;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+  .g-container{
+    width: @container-width;
+    padding: 25px 0;
+    margin: auto;
+    background: @bg-color;
+  }
+  .g-frame-container{
+    width: 100%;
+    padding: 25px;
+    margin: auto;
+    background: @bg-color;
+  }
+  // 没有内容
+  .g-no-content{
+    text-align: center;
+    padding: 100px;
+  }
+}
+
+@import url('./dropdown.less');

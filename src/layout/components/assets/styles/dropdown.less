@@ -1,0 +1,32 @@
+@import url("./constant.less");
+:global{
+  .g-head-dropdown{
+    border: 1px solid @border-color;
+    border-radius: 3px;
+    width: 350px;
+    color: rgba(0, 0, 0, 0.65);
+    background: #fff;
+    padding: 20px;
+    .no-content{
+      text-align: center;
+    }
+    &-item{
+      border-bottom: 1px solid @border-color;
+      padding: 5px 0;
+      .type{
+        color: @dropdown-title-color;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+      .content{
+        .title{
+          margin-bottom: 5px;
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+          width: 200px;
+        }
+      }
+    }
+  }
+}

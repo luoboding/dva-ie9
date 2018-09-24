@@ -1,0 +1,28 @@
+:global{
+  .page-notfound{
+    background: #fff;
+    padding: 24px;
+    margin: 0;
+    padding: 150px;
+    &-box{
+      .title{
+        text-align: center;
+      }
+      img{
+        width: 80px;
+        display: block;
+        margin: 20px auto;
+        transition: all .3s ease-in-out;
+        position: relative;
+      }
+      &:hover{
+        img{
+          left: 20px;
+          top: 20px;
+          transform: rotate(25deg) scale3d(0.2, 0.2, 0.2) translate3d(250px, -200px, -200px);
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

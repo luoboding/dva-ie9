@@ -1,0 +1,66 @@
+@import url('./../../../../layout/components/assets/styles/constant.less');
+
+:global {
+  @h-gap: 20px;
+  @v-gap: 25px;
+  .page-index {
+    // 整体模块布局(左右结构)
+    .index-module{
+      overflow: hidden;
+      margin-bottom: @v-gap;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .index-module-left{
+        background: #fff;
+        overflow: hidden;
+        &.no-background {
+          background: none;
+        }
+      }
+      .index-module-right{
+        margin-left: @h-gap;
+        width: @right-bar-width;
+        overflow: hidden;
+        background: #fff;
+      }
+    }
+  }
+  // 人力应用小模块布局
+  .g-box{
+    &-header{
+      padding: 15px 20px;
+      border-bottom: 1px solid @border-color;
+      &::after{
+        content:".";
+        display:block;
+        height:0;
+        visibility:hidden;
+        clear:both;
+      }
+      &-title{
+        font-size: 16px;
+        font-weight: 500;
+        float: left;
+      }
+      &-link{
+        float: right;
+        color: @box-header-link-color;
+        font-size: 14px;
+      }
+    }
+    &-body{
+      padding: 20px;
+    }
+  }
+}
+@import url('./banner.less');
+@import url('./brief.less');
+@import url('./notice.less');
+@import url('./application.less');
+@import url('./duty.less');
+@import url('./notice.less');
+@import url('./work.less');
+@import url('./policy.less');
+@import url('./perInfo.less');
+// @import url('./application-modal.less');

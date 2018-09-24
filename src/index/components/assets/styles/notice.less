@@ -1,0 +1,26 @@
+:global {
+  .page-index{
+    .notice-center{
+      padding: 10px;
+      height: 279px;
+      tr{
+        td{
+          padding: 10px;
+          border-bottom: none;
+          &:first-child{
+            text-align: left;
+          }
+          &:last-child{
+            text-align: right;
+          }
+          .title{
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            max-width: 520px;
+          }
+        }
+      }
+    }
+  }
+}
